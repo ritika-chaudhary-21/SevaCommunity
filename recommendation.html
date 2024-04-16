@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+<link rel="stylesheet" href="recommendation.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="user.png">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">User </span>
+        <span class="profession">Profession</span>
+      </div>
+    </div>
+
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+
+      <li class="search-box">
+        <i class='bx bx-search icon'></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="Home.html">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="recommendation.html">
+              <i class='bx bx-pin icon'></i>
+              <span class="text nav-text">Localized Recommendation</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="poll.html">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">Polls and Surveys</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="safetyalerts.html">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+            <a href="calendar.html">
+              <i class='bx bx-calendar icon'></i>
+              <span class="text nav-text">Community Calendar</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="garbage.html">
+            <i class='bx bx-trash-alt icon'></i>
+            <span class="text nav-text">Garbage</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="feedback.html">
+              <i class='bx bx-pen icon'></i>
+              <span class="text nav-text">Feedback</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="login.html">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+
+</nav>
+
+<section class="home">
+  <div class="text">SevaCommunity</div>
+  <h1 style="margin-left: 40%;">Localized Recommendation</h1>
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.ZNGFAcyjvNsDVhSfPvQVYgHaE8&pid=Api&P=0&h=220" alt="Restaurant">
+    <div class="overlay">
+      <i class="fas fa-utensils"></i>
+      <h3>Recommendations: Restaurants</h3>
+      <ul class="services">
+        <li>Italian Delight</li>
+        <li>Chinese Garden</li>
+        <li>Mexican Fiesta</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.oAF3klC47I1T15ywaztHCAHaE8&pid=Api&P=0&h=220" alt="Hotel">
+    <div class="overlay">
+      <i class="fas fa-hotel"></i>
+      <h3>Recommendations: Hotels</h3>
+      <ul class="services">
+        <li>Luxury Suites</li>
+        <li>Budget Inns</li>
+        <li>Cozy Bed and Breakfast</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.ojMAPqX3jjo4TW_mxfbKwwHaE8&pid=Api&P=0&h=220" alt="Hospital">
+    <div class="overlay">
+      <i class="fas fa-hospital"></i>
+      <h3>Recommendations: Hospitals</h3>
+      <ul class="services">
+        <li>Care Health Center</li>
+        <li>Hope Hospital</li>
+        <li>Unity Medical Center</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.Lyu6CwMUxCR36HIKWpbalgHaED&pid=Api&P=0&h=220" alt="Park">
+    <div class="overlay">
+      <i class="fas fa-tree"></i>
+      <h3>Recommendations: Parks</h3>
+      <ul class="services">
+        <li>Nature's Haven Park</li>
+        <li>Central Park</li>
+        <li>Green Meadows Park</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.p4otcshJf4TdPIpadAvGAAHaFj&pid=Api&P=0&h=220" alt="Cyber Cafe">
+    <div class="overlay">
+      <i class="fas fa-laptop"></i>
+      <h3>Recommendations: Cyber Cafes</h3>
+      <ul class="services">
+        <li>Connect Hub</li>
+        <li>Digital Oasis</li>
+        <li>Net Zone</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card" onclick="toggleCard(this)">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.2RqZQT3bQf0FfMs-t5su2gHaEo&pid=Api&P=0&h=220" alt="Dairy">
+    <div class="overlay">
+      <i class="fas fa-store"></i>
+      <h3>Recommendations: Dairy</h3>
+      <ul class="services">
+        <li>Fresh Farms Dairy</li>
+        <li>Milky Way Dairy</li>
+        <li>Happy Cows Dairy</li>
+      </ul>
+    </div>
+  </div>
+  
+</section>
+<!-- partial -->
+
+<script  src="script.js"></script>
+</body>
+</html>

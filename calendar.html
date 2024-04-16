@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8"><meta charset="utf-8">
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <title>Community Calendar</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+<link rel="stylesheet" href="calendar.css">
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/daygrid.min.css' rel='stylesheet' />
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="user.png">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">User </span>
+        <span class="profession">Profession</span>
+      </div>
+    </div>
+
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+
+      <li class="search-box">
+        <i class='bx bx-search icon'></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="Home.html">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="recommendation.html">
+              <i class='bx bx-pin icon'></i>
+              <span class="text nav-text">Localized Recommendation</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="poll.html">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">Polls and Surveys</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="safetyalerts.html">
+              <i class='bx bx-shield icon'></i>
+              <span class="text nav-text">Safety Alerts</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+            <a href="calendar.html">
+              <i class='bx bx-calendar icon'></i>
+              <span class="text nav-text">Community Calendar</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="garbage.html">
+            <i class='bx bx-trash-alt icon'></i>
+            <span class="text nav-text">Garbage</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="feedback.html">
+              <i class='bx bx-pen icon'></i>
+              <span class="text nav-text">Feedback</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="login.html">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+
+</nav>
+
+<section class="home">
+  <div class="text">SevaCommunity</div>
+  <div class="container">
+    <h1>Community Calendar</h1>
+    </div>
+
+  <div class="calendar-container">
+      <div class="calendar-header">
+          <h2 id="currentMonth"></h2>
+          <select id="monthDropdown"></select>
+          <select id="yearDropdown"></select>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+  </div>
+</section>
+<!-- partial -->
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.js"></script>
+  <script  src="calendar.js"></script>
+  <body>
+</body>
+</html>

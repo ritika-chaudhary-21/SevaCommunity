@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Page</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'><link rel="stylesheet" href="feedback.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="user.png">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">User </span>
+        <span class="profession">Profession</span>
+      </div>
+    </div>
+
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+
+      <li class="search-box">
+        <i class='bx bx-search icon'></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="Home.html">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="recommendation.html">
+              <i class='bx bx-pin icon'></i>
+              <span class="text nav-text">Localized Recommendation</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="poll.html">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">Polls and Surveys</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="safetyalerts.html">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+            <a href="calendar.html">
+              <i class='bx bx-calendar icon'></i>
+              <span class="text nav-text">Community Calendar</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="garbage.html">
+            <i class='bx bx-trash-alt icon'></i>
+            <span class="text nav-text">Garbage</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="feedback.html">
+              <i class='bx bx-pen icon'></i>
+              <span class="text nav-text">Feedback</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="login.html">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+</nav>
+
+<section class="home">
+  <div class="text">SevaCommunity</div>
+
+  <div class="testbox">
+    <form action="/">
+      <p id="h1">Feedback Form</p>
+      <p id="h4">Name</p>
+      <input placeholder="Enter your full name" type="text" class="input">
+      <p id="h4">Email<span>*</span></p>
+      <input placeholder="Enter your email" type="text" class="input">
+      <p id="h4">What is your overall impression?<span>*</span></p>
+      <table>
+        <tbody><tr>
+          <th class="first-col"></th>
+          <th>Very Satisfied</th>
+          <th>Satisfied</th>
+          <th>Unsatisfied</th>
+          <th>Very Unsatisfied</th>
+        </tr>
+        <tr>
+          <td class="first-col">Professional</td>
+          <td><input name="point#2" value="none" type="radio"></td>
+          <td><input name="point#2" value="none" type="radio"></td>
+          <td><input name="point#2" value="none" type="radio"></td>
+          <td><input name="point#2" value="none" type="radio"></td>
+        </tr>
+      </tbody></table>
+      <p id="h4">Feel free to add any other comments or suggestions:</p>
+      <textarea rows="5"></textarea>
+      <div class="btn-block">
+        <button href="/" type="submit">Send Feedback</button>
+      </div>
+    </form>
+  </div></section>
+  <script  src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Polls</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'><link rel="stylesheet" href="poll.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="user.png">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">User </span>
+        <span class="profession">Profession</span>
+      </div>
+    </div>
+
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+
+      <li class="search-box">
+        <i class='bx bx-search icon'></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="Home.html">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="recommendation.html">
+              <i class='bx bx-pin icon'></i>
+              <span class="text nav-text">Localized Recommendation</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="poll.html">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">Polls and Surveys</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="safetyalerts.html">
+              <i class='bx bx-shield icon'></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+            <a href="calendar.html">
+              <i class='bx bx-calendar icon'></i>
+              <span class="text nav-text">Community Calendar</span>
+            </a>
+          </li>
+
+        <li class="nav-link">
+          <a href="garbage.html">
+            <i class='bx bx-trash-alt icon'></i>
+            <span class="text nav-text">Garbage</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+            <a href="feedback.html">
+              <i class='bx bx-pen icon'></i>
+              <span class="text nav-text">Feedback</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="login.html">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+    </div>
+  </div>
+
+</nav>
+
+<section class="home">
+  <div class="text">SevaCommunity</div>
+  <h1 style="margin-left:50%;">Polls</h1>
+  <div class="poll-container">
+    <h2>Which type of social events would you attend in our community?</h2>
+    <form id="poll-form">
+      <div class="options">
+        <label for="option1"><input type="checkbox" id="option1" name="option" value="Outdoor BBQs or Picnics">Outdoor BBQs or Picnics</label>
+        <label for="option2"><input type="checkbox" id="option2" name="option" value="Community Movie Nights">Community Movie Nights</label>
+        <label for="option3"><input type="checkbox" id="option3" name="option" value="Music Concerts or Live Performances">Music Concerts or Live Performances</label>
+        <label for="option4"><input type="checkbox" id="option4" name="option" value="Art and Craft Workshops">Art and Craft Workshops</label>
+        <label for="option5"><input type="checkbox" id="option5" name="option" value="Food Festivals or Tastings">Food Festivals or Tastings</label>
+        <label for="option6"><input type="checkbox" id="option6" name="option" value="Fitness Classes or Yoga Sessions">Fitness Classes or Yoga Sessions</label>
+        <label for="option7"><input type="checkbox" id="option7" name="option" value="Neighborhood Block Parties">Neighborhood Block Parties</label>
+        <label for="option8"><input type="checkbox" id="option8" name="option" value="Cultural Celebrations or Festivals">Cultural Celebrations or Festivals</label>
+        <label for="option9"><input type="checkbox" id="option9" name="option" value="Sports Tournaments or Games">Sports Tournaments or Games</label>
+        <label for="option10"><input type="checkbox" id="option10" name="option" value="Gardening or Green Initiatives">Gardening or Green Initiatives</label>
+        <label for="option11"><input type="checkbox" id="option11" name="option" value="Pet-Friendly Events or Meetups">Pet-Friendly Events or Meetups</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="poll-container">
+    <h2>Would you participate in community clean-up events to improve our environment?</h2>
+    <form id="poll-form">
+      <div class="options">
+        <label for="option1"><input type="radio" id="option1" name="option" value="Yes">Yes</label>
+        <label for="option2"><input type="radio" id="option2" name="option" value="No">No</label>
+        <label for="option3"><input type="radio" id="option3" name="option" value="Maybe">Maybe</label>
+        <label for="option4"><input type="radio" id="option4" name="option" value="Not Sure">Not Sure</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+<!-- partial -->
+  <script  src="script.js"></script>
+
+</body>
+</html>
